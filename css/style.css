@@ -134,6 +134,10 @@ body {
     padding: 40px 0px;
 }
 
+.rotate-svg {
+    rotate: 0.5turn;
+}
+
 /* COLORS BGC */
 .bgc-lgray {
     background-color: var(--bgc-lightgray);
@@ -222,6 +226,11 @@ a {
 .caption p {
     font-size: var(--txt-size-md);
     font-weight: var(--weight-norm);
+}
+
+.wave {
+    display: block;
+    color: var(--bgc-lightgray)
 }
 
 /* BIG-BLOCK */

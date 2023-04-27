@@ -8,17 +8,8 @@
 /* CUSTOM PROPERTIES */
 :root {
     --bgc-head: #255EE9;
-    --bgc-nav: #daa520;
-    --bgc-jumbo-box: #00008b;
-    --bgc-jumbotron: #ee82ee;
-    --bgc-figure: #1e90ff;
-    --bgc-caption: #ffc0cb;
-    --bgc-lightgray: lightgray;
+    --bgc-lightgray: #f6f6f6;
     --bgc-darkgray: #23272a;
-    --bgc-bigbox: forestgreen;
-    --bgc-social: #f08080;
-    --bgc-column: #20b2aa;
-    --bgc-foot-color: #7fffd4;
     --fl-basis-small: 20%;
     --fl-basis-medium: 50%;
     --fl-basis-large: 60%;
@@ -245,7 +236,7 @@ a {
 
 /* BIG FOOTER */
 #big-footer {
-    padding-top: 50px;
+    padding: 50px 0px;
 }
 .social {
     height: 100%;
@@ -282,7 +273,6 @@ a {
     height: 100%;
     padding: 25px;
     flex-basis: calc(var(--fl-basis-total)/4);
-    /* border: 2px dashed white; */
 }
 
 .map-title {
@@ -292,14 +282,14 @@ a {
 /* LITTLE FOOTER */
 .foot-box {
     height: 90px;
-    border-top: 2px solid var(--bgc-lightgray);
-    border-bottom: 2px solid var(--bgc-lightgray);
+
 }
 
 .little-foot {
+    padding: 60px 0px;
+    border-top: 2px solid #3e4968;
     align-self: flex-end;
     height: 60px;
-    background-color: var(--bgc-foot-color);
     justify-content: space-between;
     align-items: center;
 }

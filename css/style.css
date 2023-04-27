@@ -24,9 +24,9 @@
     --fl-basis-large: 60%;
     --fl-basis-xlarge: 70%;
     --fl-basis-total: 100%;
-    --txt-size-sm: ;
+    --txt-size-sm: 1.2rem;
     --txt-size-md: 1.4rem;
-    --txt-size-lg: ;
+    --txt-size-lg: 2.7rem;
     --txt-size-xl: 3.5rem;
 }
 
@@ -70,13 +70,16 @@
     margin-top: 10px;
 }
 
-/* .text-deco {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-} */
-
 .flex-reverse {
     flex-direction: row-reverse;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
 }
 
 .center {
@@ -153,7 +156,7 @@ a {
 
 .jumbotron {
     background-color: var(--bgc-jumbo-box);
-    height: 500px;
+    height: 550px;
     background-image: url(../img/jumbo.png);
     background-size: cover;
 }
@@ -182,22 +185,33 @@ a {
 
 /* MAIN */
 .block-box {
-    height: 600px;
+    height: 800px;
 }
 .block {
     height: 500px;
 }
 
-figure {
+.picture {
     height: 100%;
-    background-color: var(--bgc-figure);
     flex-basis: 60%;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
 }
 
 .caption {
+    padding: 40px 70px;
     height: 100%;
     flex-basis: 40%;
-    background-color: var(--bgc-caption);
+}
+
+.caption h2 {
+    margin-bottom: 25px;
+    font-size: var(--txt-size-lg);
+}
+
+.caption p {
+    font-size: var(--txt-size-md);
+    font-weight: 400;
 }
 
 /* BIG-BLOCK */
@@ -244,8 +258,4 @@ figure {
     background-color: var(--bgc-foot-color);
     justify-content: space-between;
     align-items: center;
-}
-
-div.div-button > p {
-    padding: 5px;
 }

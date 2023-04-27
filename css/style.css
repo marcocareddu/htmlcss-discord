@@ -7,7 +7,7 @@
 
 /* CUSTOM PROPERTIES */
 :root {
-    --bgc-head: #add8e6;
+    --bgc-head: #3161e0;
     --bgc-nav: #daa520;
     --bgc-jumbo-box: #00008b;
     --bgc-jumbotron: #ee82ee;
@@ -24,12 +24,23 @@
     --fl-basis-large: 60%;
     --fl-basis-xlarge: 70%;
     --fl-basis-total: 100%;
+    --txt-size-sm: ;
+    --txt-size-md: ;
+    --txt-size-lg: ;
+    --txt-size-xl: ;
 }
 
 /* UTILITY */
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.button-white {
+    color: #000;
+    background-color: #fff;
+    border-radius: 35%;
+    padding: 10px 10px;
 }
 
 .d-flex {
@@ -80,6 +91,11 @@
     flex-basis: var(--fl-basis-total);
 }
 
+body {
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
 /* COLORS BGC */
 .bgc-lgray {
     background-color: var(--bgc-lightgray);
@@ -96,14 +112,27 @@ header {
 }
 
 #header-menu {
+    align-items: center;
     justify-content: center;
-    background-color: var(--bgc-nav);
 }
 
 .navbar {
     text-align: center;
 }
 
+/* LIST */
+ul li {
+    color: #fff;
+    display: inline;
+    list-style-type: none;
+    padding: 0px 20px;
+    font-weight: 600;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
 .login {
     text-align: right;
 }

@@ -63,6 +63,10 @@
     display: flex;
 }
 
+.d-column {
+    flex-direction: column;
+}
+
 .border {
     border: 2px dashed black;
 }
@@ -159,7 +163,7 @@ ul li {
     color: #fff;
     display: inline;
     list-style-type: none;
-    padding: 0px 20px;
+    padding: 10px 20px;
     font-weight: 600;
 }
 
@@ -203,7 +207,7 @@ a {
 
 /* MAIN */
 .block-box {
-    height: 800px;
+    min-height: 550px;
 }
 .block {
     height: 500px;
@@ -236,6 +240,7 @@ a {
 /* BIG-BLOCK */
 .big-box {
     height: 1000px;
+    padding-bottom: 150px;
 }
 
 /* BIG FOOTER */
@@ -271,13 +276,17 @@ a {
 
 .col-box {
     height: 100%;
-    background-color: var(--bgc-column);
 }
 
 .column {
     height: 100%;
+    padding: 25px;
     flex-basis: calc(var(--fl-basis-total)/4);
-    border: 2px dashed white;
+    /* border: 2px dashed white; */
+}
+
+.map-title {
+    color: #748bdc;
 }
 
 /* LITTLE FOOTER */
